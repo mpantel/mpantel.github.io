@@ -7,3 +7,5 @@ _site
 /.idea/modules.xml
 /.idea/mpantel.github.io.iml
 /.idea/vcs.xml
+/migrate-blogger
+/blogger/
