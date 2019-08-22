@@ -13,35 +13,46 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               Michail Pantelelis Blog
+tagline:             'A Personal Blog'
+description:         >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url:                  "https://www.pantelelis.gr/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:             '' # the subpath of your site, e.g. /blog
+paginate:            5
+email: michail@pantelelis.gr
+twitter_username: mpantel
+github_username:  mpantel
 
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-minimal
-plugins:
-  - jekyll-feed
+# About/contact
+author:
+  name:              Pantelelis Michail
+  url:               https://www.pantelelis.gr
+  email:             michail@pantelelis.gr
 
+disqus: pantelelis-gr
+clicky: 101204458
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 exclude:
-  - blogger
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - blogger/
   - migrate-blogger
-  - .idea
+  - .idea/
+  - atom.xml
